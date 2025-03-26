@@ -1,0 +1,315 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+
+body{
+    background-color: #fad1d1;
+    font-family: "Oleo Script", system-ui;
+    font-weight: 400;
+    font-size:large;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.front-page{
+    position: relative;
+    width: 100%;
+    padding: 0 1.2% 0 1.2%;
+    height: 100vh;
+}
+
+nav{
+    position: fixed;
+    top: 5%;
+    right: 25%;
+    font-size: x-large;
+}
+
+nav ul{
+    display: flex;
+    gap: 10%;
+    list-style: none;
+}
+
+nav ul li a{
+    color: #735766;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    font-size: x-large;
+    color: #A77A95;
+}
+
+.opening{
+    position: absolute;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 10%;
+    top: 20%;
+    width: 100%;
+    
+}
+
+@media (max-width: 800px){
+    .opening{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.opening .opening-texts{
+    position: relative;
+}
+
+.opening .opening-texts a{
+    font-size: large;
+    text-decoration: none;
+    color: #735766;
+    padding: 5px 20px;
+    background-color: #f8c463;
+    border-radius: 12px;
+    transition: 0.3s linear;
+}
+
+.opening .opening-texts a:hover{
+    padding: 2px 10px;
+    background-color: #F5D69B;
+    font-size: larger;
+}
+
+.makeup-brush{
+    width: 350px;
+    height: 250px;
+    opacity: 0.3;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    
+}
+
+
+
+.opening .opening-imgs{
+ position: relative;
+}
+
+
+.makeup-ring{
+    width: 350px;
+    opacity: 0.2;
+    animation: rotate 0.5s ease-in-out 0.1s forwards;
+}
+
+.opening .opening-imgs .prophile-pic{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    position: absolute;
+    top: 26%;
+    left: 27%;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(45deg);
+    }
+}
+
+.nextPage{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    color: black;
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 0 15px 5px white;
+}
+
+.nextPage:hover, ::after{
+    background-color: white;
+    box-shadow: 0 0 15px 10px white;
+}
+
+@media (max-width: 800px) {
+    #experience{
+        width: 100%;
+    }
+
+
+    .e-education {
+        width: 100%;
+        margin-left: none;
+        margin-right: none;
+        padding: 20px;
+    }
+
+    .e-education .experience-style {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .e-education .experience-style ul{
+        width: 100%;
+    }
+
+    .e-education .experience-style ul li{
+        width: 100%;
+    }
+
+    .e-education .experience-style img {
+        max-width: 80%; /* Ensures better scaling */
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .e-education .experience-style div {
+        width: 90%; /* Adjust text width */
+    }
+
+    .e-experience {
+        width: 100%;
+        margin-top: 100px;
+        margin-left: none;
+        margin-right: none;
+        text-align: center;
+    }
+
+    .e-experience .experience-style img {
+        max-width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
+
+
+#experience{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.e-education{
+    width: 80%;
+    text-align: center;
+    background: conic-gradient(at top right, slategray, white);
+    margin-left: 6%;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 5px dimgray;
+}
+
+.e-education .experience-style{
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    margin: 40px 30px;
+}
+
+.e-education .experience-style div{
+    width: 50%;
+}
+
+.e-education .experience-style img{
+    width: 300px;
+    height: 400px;
+    box-shadow: 5px 5px 2px darkslategrey;
+    border-radius: 5px;
+}
+
+.e-certificates{
+    text-align: center;
+    margin: 100px 0 50px;
+}
+
+.e-certificates h1{
+    margin: 30px 0;
+}
+
+.e-experience{
+    margin-top: 150px;
+    margin-left: 20%;
+}
+
+.e-experience .experience-style img{
+    width: 300px;
+    height: 400px;
+    box-shadow: -5px 5px 2px darkslategrey;
+    border-radius: 5px;
+}
+
+.others{
+    margin: 200px 0 50px 3%;
+    width: 90%;
+    background: conic-gradient(from -90deg at 50% 105%, white, orchid);
+    border-radius: 8%;
+    padding: 2%;
+}
+
+.other-experiences{
+    text-align: center;
+}
+
+.others ul{
+    list-style: none;
+}
+
+.works{
+    width: 60%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 80vh;
+    border: 1px solid darkslategray;
+    margin-left: 20%;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    background-color: #FCFAF2;
+}
+
+.works h1{
+    text-align: center;
+}
+
+.works img{
+    border: 3px solid grey;
+    max-width: 48%;
+    height: auto;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) { 
+    .works img{
+        max-width: 100%;
+    }
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: silver;
+    box-shadow: 3px 0 8px darkslategray;
+}
+
+.contact img{
+    width: 70%;
+    height: auto;
+}
