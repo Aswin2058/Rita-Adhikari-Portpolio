@@ -67,6 +67,7 @@ nav ul li a:hover{
 }
 
 .opening .opening-texts a{
+    cursor: pointer;
     font-size: large;
     text-decoration: none;
     color: #735766;
@@ -77,7 +78,6 @@ nav ul li a:hover{
 }
 
 .opening .opening-texts a:hover{
-    padding: 2px 10px;
     background-color: #F5D69B;
     font-size: larger;
 }
