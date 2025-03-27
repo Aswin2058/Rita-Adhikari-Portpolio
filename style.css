@@ -11,6 +11,7 @@ body{
     font-size:large;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    width: 100%;
 }
 
 .front-page{
@@ -123,61 +124,9 @@ nav ul li a:hover{
     }
 }
 
-@media (max-width: 800px) {
-    #experience{
-        width: 100%;
-    }
-
-
-    .e-education {
-        width: 100%;
-        margin-left: none;
-        margin-right: none;
-        padding: 20px;
-    }
-
-    .e-education .experience-style {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .e-education .experience-style ul{
-        width: 100%;
-    }
-
-    .e-education .experience-style ul li{
-        width: 100% ;
-    }
-
-    .e-education .experience-style img {
-        max-width: 80%; /* Ensures better scaling */
-        height: auto;
-        margin-bottom: 20px;
-    }
-
-    .e-education .experience-style div {
-        width: 90%; /* Adjust text width */
-    }
-
-    .e-experience {
-        width: 100%;
-        margin-top: 100px;
-        margin-left: none;
-        margin-right: none;
-        text-align: center;
-    }
-
-    .e-experience .experience-style img {
-        max-width: 80%;
-        height: auto;
-        margin-bottom: 20px;
-    }
-}
-
 
 #experience{
+    width: 100%;
     margin-top: 150px;
     display: flex;
     flex-direction: column;
@@ -220,8 +169,32 @@ nav ul li a:hover{
 }
 
 .e-experience{
+    background: conic-gradient(at top right, slategray, white);
+    border-radius: 20px;
+    box-shadow: 0 0 15px 5px dimgray;
+    text-align: center;
     margin-top: 150px;
     margin-left: 20%;
+    margin-right: 4%;
+}
+
+
+.e-experience .experience-style{
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    margin: 40px 30px;
+}
+
+.e-experience .experience-style div{
+    width: 50%;
+}
+
+.e-experience .experience-style img{
+    width: 300px;
+    height: 400px;
+    box-shadow: 5px 5px 2px darkslategrey;
+    border-radius: 5px;
 }
 
 .e-experience .experience-style img{
@@ -231,11 +204,79 @@ nav ul li a:hover{
     border-radius: 5px;
 }
 
+
+@media (max-width: 800px) {
+    #experience{
+        width: 100%;
+    }
+
+    .e-education{
+        margin: 0%;
+        width: 100%;
+
+    }
+
+    .e-experience{
+        width: 100%;
+        margin: 0%;
+            margin-top: 100px;
+    }
+
+    .e-education .experience-style{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .e-experience .experience-style{
+        display: flex;
+        flex-direction: column;
+    }
+   
+    .e-education .experience-style div{
+        width: 100%;
+    }
+
+    .e-education .experience-style img{
+        width: 100%;
+    }
+
+    .e-education .experience-style div ul{
+        width: 100%;
+    }
+
+    .e-education .experience-style div ul li{
+        width: 100%;
+    }
+
+    .e-experience .experience-style div{
+        width: 100%;
+    }
+
+    .e-experience .experience-style img{
+        width: 100%;
+    }
+
+    .e-experience .experience-style div ul{
+        width: 100%;
+    }
+
+    .e-experience .experience-style div ul li{
+        width: 100%;
+    }
+
+    .others{
+        width: 100%;
+        margin: 0%;
+            margin-top: 100%;
+    }
+
+}
+
 .others{
     margin: 200px 0 50px 3%;
     width: 90%;
-    background: conic-gradient(from -90deg at 50% 105%, white, orchid);
-    border-radius: 8%;
+    background: conic-gradient(at top right, slategray, white);
+    border-radius: 15px;
     padding: 2%;
 }
 
@@ -272,6 +313,13 @@ nav ul li a:hover{
 }
 
 @media (max-width: 800px) { 
+    .works{
+        width: 90%;
+        margin: 0%;
+            margin-left: 5%;
+            margin-bottom: 100px;
+    }
+
     .works img{
         max-width: 100%;
     }
@@ -291,4 +339,13 @@ nav ul li a:hover{
 .contact img{
     width: 70%;
     height: auto;
+}
+
+@media (max-width: 800px){
+    .contact{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 35px;
+    }
 }
