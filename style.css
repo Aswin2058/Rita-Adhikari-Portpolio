@@ -26,6 +26,7 @@ nav{
     top: 5%;
     right: 25%;
     font-size: x-large;
+    z-index: 99999;
 }
 
 nav .nav-bar{
@@ -61,7 +62,37 @@ nav ul li a:hover{
 }
 
 nav .mobile-nav{
-    display:none;
+    display:block;
+    list-style: none;
+    position: fixed;
+    width: 80%;
+    height: 110vh;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    background-color: rgba(192, 192, 192, 0.692);
+    cursor: pointer;
+    text-align: center;
+}
+
+nav .mobile-nav li{
+    margin-top: 15%;
+}
+
+nav .mobile-nav a{
+    z-index: 99999;
+}
+
+nav .mobile-nav .nav-close{ 
+    width: 40px;
+    height: 40px;
+    margin-left: 90%;
+    margin-top: 2%;
+}
+
+nav .mobile-nav .nav-close img{
+    width: 40px;
+    height: 40px;
 }
 
 @media (max-width: 800px) {
@@ -95,6 +126,11 @@ nav .mobile-nav{
         display: flex;
         flex-direction: column;
         font-size: larger;
+        top: 16%;
+    }
+
+    .opening .opening-texts .buttons{
+        margin-top: 13px;
     }
 }
 
@@ -110,6 +146,7 @@ nav .mobile-nav{
     padding: 5px 20px;
     background-color: #f8c463;
     border-radius: 12px;
+    margin-top: 20px;
     transition: 0.3s linear;
 }
 
@@ -132,6 +169,8 @@ nav .mobile-nav{
 
 .opening .opening-imgs{
  position: relative;
+ pointer-events: none;
+ z-index: 99;
 }
 
 
@@ -375,6 +414,28 @@ nav .mobile-nav{
     width: 70%;
     height: auto;
 }
+
+.other-references{
+    margin-top: 10px;
+}
+
+.other-references a{
+    cursor: pointer;
+    font-size: large;
+    text-decoration: none;
+    color: #735766;
+    padding: 5px 20px;
+    background-color: #f8c463;
+    border-radius: 12px;
+    transition: 0.3s linear;
+
+}
+
+.other-references a:hover{
+    background-color: #F5D69B;
+    font-size: larger;
+}
+
 
 @media (max-width: 800px){
     .contact{
