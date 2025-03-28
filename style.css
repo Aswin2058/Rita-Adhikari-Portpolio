@@ -54,6 +54,8 @@ nav ul li a:hover{
     top: 2%;
     left: 2%;
     display: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.144);
 }
 
 .nav-menu img{
