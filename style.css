@@ -28,13 +28,13 @@ nav{
     font-size: x-large;
 }
 
-nav ul{
+nav .nav-bar{
     display: flex;
     gap: 10%;
     list-style: none;
 }
 
-nav ul li a{
+nav li a{
     color: #735766;
     text-decoration: none;
 }
@@ -42,6 +42,40 @@ nav ul li a{
 nav ul li a:hover{
     font-size: x-large;
     color: #A77A95;
+}
+
+.nav-menu{
+    width: 60px;
+    height: 60px;
+    object-fit: fill;
+    position: fixed;
+    z-index: 99999;
+    top: 2%;
+    left: 2%;
+    display: none;
+}
+
+.nav-menu img{
+    width: 60px;
+    height: 60px;
+}
+
+nav .mobile-nav{
+    display:none;
+}
+
+@media (max-width: 800px) {
+    nav .nav-bar{
+        display: none;
+    }
+
+    nav .nav-menu{
+        display: block;
+    }
+
+    nav .mobile-nav{
+        display: none;
+    }
 }
 
 .opening{
@@ -60,6 +94,7 @@ nav ul li a:hover{
     .opening{
         display: flex;
         flex-direction: column;
+        font-size: larger;
     }
 }
 
